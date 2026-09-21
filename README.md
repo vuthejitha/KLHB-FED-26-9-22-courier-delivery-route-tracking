@@ -163,37 +163,6 @@ Out for Delivery
 
 ---
 
-# Repository Structure
-
-The repository follows the required GitHub folder structure.
-
-```text
-KLH-<Branch>-<AcademicYear>-<TeamID>-CourierTracking/
-│
-├── src/
-│   ├── Courier.java
-│   ├── DeliveryRoute.java
-│   └── CourierTrackingSystem.java
-│
-├── docs/
-│   ├── project-design.pdf
-│   └── diagrams/
-│
-├── data/
-│   └── sample-data.txt
-│
-├── results/
-│   ├── sample-output.txt
-│   └── screenshots/
-│
-├── reports/
-│   ├── phase-1-report.pdf
-│   ├── phase-2-report.pdf
-│   └── final-report.pdf
-│
-└── README.md
-```
-
 ### Folder Description
 
 | Folder      | Purpose                                              |
