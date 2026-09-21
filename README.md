@@ -23,7 +23,7 @@
 
 | S.No | Name              | Student ID | 
 | ---- | ------------------|----------- | 
-| 1    | V. Uthejitha      | 26200800    | 
+| 1    | V. Uthejitha      | 2620080041  | 
 | 2    | L. Manasa Pranavi | 2620030500  | 
 | 3    | D. Bhavyashree    | 2620080023  | 
 
