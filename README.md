@@ -11,8 +11,6 @@
 
 **Academic Year:** 2026–27
 
-**Branch:** CSE`
-
 **Team ID:** 22
 
 **Supervisor:** 
