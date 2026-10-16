@@ -1,55 +1,277 @@
-# Hyderabad Courier — Delivery Route & Tracking System
+# KLHB-FED-26-9-22-courier-delivery-route-tracking
+# Courier Delivery Route and Tracking System
 
-A simple Java console program (1st year BTech, Academic Year 2026-27).
+## Project Information
 
-**Team:** V. Uthejitha (2620080041), D. Bhavyasree (2620080023), L. Manasa (2620030500)
+**Project Title:** Courier Delivery Route and Tracking System
 
-## Problem
+**Repository Name: KLHB-FED-26-9-22-courier-delivery-route-tracking
 
-Small courier offices track parcels on paper. Customers cannot easily find the price, the route
-or the delivery date, and the office cannot easily see which couriers are free.
+**Programming Language:** Java
 
-## What the program does
+**Academic Year:** 2026–27
 
-**Customer:** check price and delivery date, book a parcel, see my orders, track an order.
-**Admin** (`admin` / `admin123`): view all orders, assign a courier, update status, search,
-sort by price, summary report, view and add couriers.
+**Team ID:** 22
 
-77 Hyderabad areas are grouped into 6 zones. The shortest route between zones is found with
-Dijkstra's algorithm. Tracking is simulated (no GPS, no internet).
+**Supervisor:** 
 
-- Distance = 3 km + km between zones + 3 km
-- Price = Rs.30 + Rs.5 per km + Rs.10 per kg
-- Delivery days = number of zones on the route
+---
 
-## How to run in VS Code
+## Team Members
 
-1. Open this folder in VS Code (File > Open Folder).
-2. Open `Main.java` and click **Run** above `main`, or in the terminal type:
+| S.No | Name              | Student ID | 
+| ---- | ------------------|----------- | 
+| 1    | V. Uthejitha      | 2620080041  | 
+| 2    | L. Manasa Pranavi | 2620030500  | 
+| 3    | D. Bhavyasree    | 2620080023  | 
 
+
+---
+
+## Abstract
+
+The **Courier Delivery Route and Tracking System** is a Java-based project designed to manage courier deliveries and track their delivery status.
+
+The system stores courier details such as courier ID, sender name, receiver name, pickup location, delivery location, and delivery status. It also provides a simple method for assigning and displaying delivery routes.
+
+The project demonstrates the practical application of Java programming concepts such as **classes, objects, methods, arrays, loops, conditional statements, switch statements, and user input using Scanner**.
+
+The main goal of the project is to provide a simple system that can help organize courier information and monitor the progress of deliveries.
+
+---
+
+## Objectives
+
+* To maintain courier and customer details.
+* To assign delivery routes.
+* To track the current delivery status.
+* To update courier status during the delivery process.
+* To search and display courier information.
+* To demonstrate Java programming concepts through a real-world application.
+
+---
+
+## Features
+
+* Add courier details
+* Generate/store courier ID
+* Store sender and receiver information
+* Store pickup and delivery locations
+* Assign delivery routes
+* Update delivery status
+* Search courier using courier ID
+* Display courier details
+* Track the current delivery status
+
+---
+
+## Technologies Used
+
+* **Programming Language:** Java
+* **IDE:** VS Code / IntelliJ IDEA / Eclipse
+* **Version Control:** Git
+* **Repository:** GitHub
+
+---
+
+## Java Concepts Used
+
+The project uses the following Java concepts:
+
+* Variables and data types
+* Classes and objects
+* Constructors
+* Methods
+* Arrays
+* Strings
+* `if-else`
+* `switch`
+* `for` loops
+* `while` loops
+* `Scanner`
+* Object-oriented programming basics
+
+---
+
+## Project Workflow
+
+```text
+Start
+  ↓
+Enter Courier Details
+  ↓
+Generate Courier ID
+  ↓
+Enter Pickup & Delivery Locations
+  ↓
+Assign Delivery Route
+  ↓
+Update Delivery Status
+  ↓
+Search / Track Courier
+  ↓
+Display Courier Information
+  ↓
+End
 ```
-javac *.java
-java Main
+
+---
+
+## Delivery Status
+
+The system supports different delivery stages:
+
+```text
+Order Placed
+     ↓
+Picked Up
+     ↓
+In Transit
+     ↓
+Out for Delivery
+     ↓
+Delivered
 ```
 
-Data is saved in `couriers.txt` and `parcels.txt` (created automatically).
+---
 
-## Files
+## Example
 
-| File | What it does |
-|---|---|
-| `Main.java` | Menus for customer and admin, booking, tracking, sorting, report |
-| `Courier.java` | Class for one courier |
-| `Parcel.java` | Class for one parcel |
-| `RouteFinder.java` | Areas, zones, road distances, Dijkstra's shortest path |
-| `Storage.java` | Saves and loads data from text files |
+```text
+========================================
+   COURIER DELIVERY TRACKING SYSTEM
+========================================
 
-## Topics used (Modules 1 to 5 only)
+Enter Courier ID: C101
 
-| Module | Where it is used |
-|---|---|
-| 1. Basics | Variables, data types, operators, typecasting `(int)`, Scanner input, `String.format` output |
-| 2. Control flow | if / else-if, switch (menus, tracking), for, while (3 login tries), do-while (menus) |
-| 3. Methods, recursion, arrays | Methods, method overloading (`line()`), recursion (`addPath`), 1D and 2D arrays, linear search, counting, bubble sort |
-| 4. OOP and exceptions | Classes, objects, constructors, `this`, private fields, getters/setters, static members, `toString()`, try-catch, multi-catch |
-| 5. Strings and files | `equals`, `equalsIgnoreCase`, `contains`, `toLowerCase`, `split`, `trim`, StringBuilder, BufferedReader/BufferedWriter, try-with-resources, missing file and broken line handling |
+Courier Details
+----------------------------------------
+Courier ID       : C101
+Sender Name      : Rahul
+Receiver Name    : Anil
+Pickup Location  : Hyderabad
+Delivery Location: Secunderabad
+
+Route:
+Hyderabad → Bowenpally → Secunderabad
+
+Current Status:
+Out for Delivery
+```
+
+---
+
+### Folder Description
+
+| Folder      | Purpose                                              |
+| ----------- | ---------------------------------------------------- |
+| `/src`      | Java source code                                     |
+| `/docs`     | Project documentation, diagrams and design documents |
+| `/data`     | Input/sample data or documented data source          |
+| `/results`  | Program outputs and screenshots                      |
+| `/reports`  | Phase-wise and final project reports                 |
+| `README.md` | Project overview and execution instructions          |
+
+---
+
+# Setup Instructions
+
+## Prerequisites
+
+Install the following:
+
+* Java JDK
+* Git
+* VS Code / IntelliJ IDEA / Eclipse
+
+Check Java installation:
+
+```bash
+java -version
+```
+
+Check Git installation:
+
+```bash
+git --version
+```
+
+---
+
+# Clone the Repository
+
+```bash
+git clone https://github.com/<username>/<repository-name>.git
+```
+
+Move into the project folder:
+
+```bash
+cd <repository-name>
+```
+
+---
+
+# Compile the Project
+
+Navigate to the source folder:
+
+```bash
+cd src
+```
+
+Compile the main Java program:
+
+```bash
+javac CourierTrackingSystem.java
+```
+
+---
+
+# Run the Project
+
+```bash
+java CourierTrackingSystem
+```
+
+Follow the instructions displayed in the terminal.
+
+---
+
+# Data Source
+
+The current version uses **sample/local data entered by the user through the Java program**.
+
+No external database is currently used.
+
+If an external dataset or database is added in a future phase, its source and usage will be documented in the `/data` folder.
+
+---
+
+# Current Phase Status
+
+**Current Phase:** `<Phase 1 / Phase 2 / Phase 3 / Final>`
+
+**Status:** `<In Progress / Completed>`
+
+### Phase Progress
+
+* [ ] Problem identification
+* [ ] Requirement analysis
+* [ ] System design
+* [ ] Java implementation
+* [ ] Route management
+* [ ] Courier tracking
+* [ ] Testing
+* [ ] Documentation
+* [ ] Final submission
+
+---
+
+# Conclusion
+
+The **Courier Delivery Route and Tracking System** provides a simple Java-based solution for managing courier information, delivery routes, and delivery status.
+
+The project applies fundamental Java programming concepts to a practical real-world problem while following the required GitHub repository structure and contribution practices.
+
+---
